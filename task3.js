@@ -23,7 +23,7 @@ function isCorrect(string) {
       if (matchingBrackets[char]) {
         stack.push(char);
       } else {
-          if (stack.length === 0 || matchingBrackets[stack.pop() !== char) {
+          if (stack.length === 0 || matchingBrackets[stack.pop()] !== char) {
             return false;
           }
       } 
